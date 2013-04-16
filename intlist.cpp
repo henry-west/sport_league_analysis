@@ -13,7 +13,7 @@ IntList::IntList()
 void IntList::printList()
 {
     ListNode *curr = head;
-    while(curr != NULL)
+    while(curr)
     {
         cout << curr->value << " ";
         curr = curr->next;

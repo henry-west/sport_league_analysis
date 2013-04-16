@@ -58,5 +58,5 @@ IntList * League::getWinners()
 }
 IntList * League::tie_breaker() {
     /* figure out tie breaker algorithm */
-    return 0;
+    return tied_teams;
 }
