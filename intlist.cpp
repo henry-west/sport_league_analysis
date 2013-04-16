@@ -1,15 +1,22 @@
+/** author: Henry West
+ * date: 15 April, 2013
+ * description: the implementation of intlist.h
+ */
 #include "intlist.h"
 #include <iostream>
 
 using namespace std;
 
-
+//constructor
 IntList::IntList()
 {
     head = NULL;
 }
 
-
+/*
+ * function printList
+ * no return, prints a linked list to the console
+ */
 void IntList::printList()
 {
     ListNode *curr = head;
@@ -21,7 +28,10 @@ void IntList::printList()
     cout << endl;
 }
 
-
+/*
+ * function appendToList
+ * no return, adds a param value to the end of a list
+ */
 void IntList::appendToList(int newValue)
 {
     ListNode * myNewNode = new ListNode;
@@ -45,7 +55,10 @@ void IntList::appendToList(int newValue)
     }
 }
 
-
+/*
+ * function prependToList
+ * no return, adds a param value to the beginning of a linked list
+ */
 void IntList::prependToList(int newValue)
 {
     ListNode * myNewNode = new ListNode;
@@ -57,8 +70,10 @@ void IntList::prependToList(int newValue)
     myNewNode->next = temp;
 
 }
-
-
+/*
+ * function insertInOrder
+ * no return, adds a param value into a linked list in numerical order
+ */
 void IntList::insertInOrder(int newValue)
 {
     ListNode * myNewNode = new ListNode;
@@ -100,7 +115,10 @@ void IntList::insertInOrder(int newValue)
         //}
     }
 }
-
+/*
+ * function size
+ * int return, returns the number of items in a linked list
+ */
 int IntList::size() {
     ListNode *curr;
     curr = head;
@@ -111,6 +129,10 @@ int IntList::size() {
     }
     return counter;
 }
+/*
+ * function contains
+ * bool return, returns whether or not a linked list contains a param element
+ */
 bool IntList::contains(int team) {
     ListNode *curr;
     curr = head;
@@ -125,7 +147,7 @@ bool IntList::contains(int team) {
     return false;
 }
 
-
+//destructor
 IntList::~IntList()
 {
     ListNode *curr;

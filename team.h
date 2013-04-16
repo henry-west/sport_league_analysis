@@ -1,3 +1,8 @@
+/** author: Henry West
+ * date: 15 April, 2013
+ * description: the declaration of a class to define
+ * a team objec, to be used with the league object
+ */
 #ifndef TEAM_H
 #define TEAM_H
 

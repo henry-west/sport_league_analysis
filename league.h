@@ -1,3 +1,8 @@
+/** author: Henry West
+ * date: 15 April, 2013
+ * description: the declaration of
+ * a class to hold a league of teams (from team.h)
+ */
 #ifndef LEAGUE_H
 #define LEAGUE_H
 
